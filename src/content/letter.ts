@@ -46,9 +46,9 @@ export const letter: Letter = {
 
   // Replace these with your own images in public/photos/.
   photos: [
-    { src: "/photos/1.png", caption: "The day it all began" },
-    { src: "/photos/2.png", caption: "Us, unbothered" },
-    { src: "/photos/3.png", caption: "My favorite view" },
+    { src: "/photos/1.jpg", caption: "Getting to know you" },
+    { src: "/photos/2.jpg", caption: "From showing up" },
+    { src: "/photos/3.jpg", caption: "Us until now" },
   ],
 
   // Drop an mp3 in public/music/ and update the path (or remove this block).
