@@ -1,0 +1,85 @@
+:root {
+  /* ── Palette ─────────────────────────────────────────────── */
+  --paper: #fbf3e7;
+  --paper-edge: #f0e2c9;
+  --paper-line: #e7d7ba;
+  --envelope: #ece0c6;
+  --envelope-shade: #ddcca8;
+  --envelope-deep: #cdb98f;
+
+  --ink: #2e2622;
+  --ink-soft: #7a6a5c;
+
+  --wine: #7a1f3d;
+  --wine-deep: #591528;
+  --wine-glow: #a63a5a;
+  --gold: #c9a227;
+  --blush: #e7c6be;
+
+  /* Ambient backdrop the envelope sits in */
+  --stage-1: #3a2130;
+  --stage-2: #4e2c3d;
+
+  /* ── Type ────────────────────────────────────────────────── */
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "EB Garamond", Georgia, serif;
+  --script: "Great Vibes", "Segoe Script", cursive;
+
+  --shadow-lift: 0 24px 60px -20px rgba(0, 0, 0, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--body);
+  color: var(--ink);
+  background:
+    radial-gradient(120% 90% at 50% 12%, var(--stage-2) 0%, var(--stage-1) 60%, #2b1826 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

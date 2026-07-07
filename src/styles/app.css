@@ -1,0 +1,10 @@
+.stage {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
