@@ -54,6 +54,6 @@ export const letter: Letter = {
   // Drop an mp3 in public/music/ and update the path (or remove this block).
   music: {
     src: "/music/song.mp3",
-    title: "Panata - Tothapi",
+    title: ".",
   },
 };
